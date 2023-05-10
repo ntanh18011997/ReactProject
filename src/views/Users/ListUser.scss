@@ -1,0 +1,33 @@
+.list-user-container{
+   .title{
+    margin: 20px auto;
+    padding: 20px auto 10px;
+    color: red;
+    font-size: 1.8rem;
+   } 
+   .list-user-content{
+        width: 40%;
+        margin: 0 auto;
+        background-color: #151a30;
+        padding: 30px 20px;
+        border: 1px solid gray;
+        border-radius: 2px;
+        .child{
+            width: 85%;
+            display: flex;
+            justify-content: left;
+            font-size: 1.7rem;
+            color: black;
+            margin: 10px auto;
+            background-color: #f4cb95 ;
+            padding: 8px 15px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            &:hover{
+                background-color: opacify($color: rgb(160, 64, 64), $amount: .1);
+                cursor: pointer;
+            }
+        
+        }
+   }
+}

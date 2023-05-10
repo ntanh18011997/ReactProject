@@ -1,0 +1,56 @@
+.container-list-todo{
+    width: 700px;
+    background-color: #151a30;
+    margin: 0 auto;
+    padding: 50px 0;
+    border-radius: 10px;
+    .add-todo{
+        margin-bottom: 20px;
+        .add-todo__input{
+            border: 2px solid #632ed4;
+            background-color: transparent;
+            padding: 5px ;
+            color: white;
+            outline: none;
+            width: 40vh;
+            margin-bottom: 10px;
+        }
+        .add-todo__btn{
+            border: 2px solid #9133ff;
+            background-image: linear-gradient(-180deg,#9d2af9, #6912ff,);
+            color: white;
+            padding: 5px 15px ;
+            
+        }
+    }
+    .list-content{
+        color: black;
+        width: 500px;
+        margin: 0 auto;
+        .list-content__child{
+            margin: 5px 0;
+            border: 1px solid grey;
+            padding: 10px 10px;
+            border-radius: 2px;
+            background-color: #f4cb95   ;
+            display: flex;
+            justify-content: space-between;
+            &:hover{
+                background-image: linear-gradient(to right bottom, red, yellow);
+            }
+            .list-content__child-text{
+
+            }
+            .list-content__child-btn{
+                display: inline-block;
+                .list-content__child-btn-edit{
+                    color: #006400;
+                    }
+                }
+                .list-content__child-btn-delete{
+                    margin-left: 10px;
+                    color: #DC143C
+                }
+            }
+        }
+    }
