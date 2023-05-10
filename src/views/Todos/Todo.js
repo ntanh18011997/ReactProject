@@ -102,12 +102,12 @@ class ListTodo extends React.Component{
                             <div className='list-content__child-btn'>
                                 {/* <button className='list-content__child-btn-add'>Edit</button> */}
                                 {isEmptyObj === false && editTodo.id === item.id ? 
-                                     <i class="fa-solid fa-floppy-disk"
+                                     <i class="fa-solid fa-floppy-disk list-content__child-btn-hover"
                                         onClick={()=> this.handleEditTodo(item)}></i> 
                                      :
                                      <i 
                                         type="button"  
-                                        className="fa-regular fa-pen-to-square list-content__child-btn-edit"
+                                        className="fa-regular fa-pen-to-square list-content__child-btn-edit list-content__child-btn-hover"
                                         onClick={()=> this.handleEditTodo(item)}
                                         >
                                     </i>
@@ -115,7 +115,7 @@ class ListTodo extends React.Component{
                                 {/* <button className='list-content__child-btn-delete'>Delete</button> */}
                                 <i 
                                     type="button"
-                                    className="fa-regular fa-circle-xmark list-content__child-btn-delete"
+                                    className="fa-regular fa-circle-xmark list-content__child-btn-delete list-content__child-btn-hover"
                                     onClick={()=> this.handleDeleteTodo(item)}>
                                 </i>
                             </div>

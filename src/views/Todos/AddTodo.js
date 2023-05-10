@@ -33,7 +33,7 @@
                 <div className='add-todo'>
                     <input 
                         className='add-todo__input'
-                        placeholder='Add name'
+                        placeholder='Input more todo'
                         value={name}
                         onChange={(event)=> this.handleOnChangeName(event)}
                         />

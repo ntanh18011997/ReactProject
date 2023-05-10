@@ -20,7 +20,9 @@
             background-image: linear-gradient(-180deg,#9d2af9, #6912ff,);
             color: white;
             padding: 5px 15px ;
-            
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     .list-content{
@@ -36,13 +38,22 @@
             display: flex;
             justify-content: space-between;
             &:hover{
-                background-image: linear-gradient(to right bottom, red, yellow);
+                border: 2px solid;
+                border-image-slice: 1;
+                border-width: 3px;
+                // background-image: linear-gradient(to right bottom, red, yellow);
+                border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
             }
             .list-content__child-text{
 
             }
             .list-content__child-btn{
                 display: inline-block;
+                .list-content__child-btn-hover{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
                 .list-content__child-btn-edit{
                     color: #006400;
                     }
