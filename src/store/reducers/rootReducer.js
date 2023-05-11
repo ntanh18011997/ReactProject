@@ -1,7 +1,7 @@
 const initState = {
     users : [
         {id: 1, name: 'Tuan Anh'},
-        {id: 1, name: 'Reactjs'},
+        {id: 2, name: 'Reactjs'},
     ]
 }
 const rootReducer = (state = initState, action) => {
