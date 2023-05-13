@@ -1,11 +1,34 @@
 .container-home{
-    .container-home-content{
-        margin-top: 50px;
-    }
-    .container-home-img{
-        margin-top: 50px;
-        .container-home-img-photo{
-            width: 700px;
+    font-family: Segoe Print;
+    font-size: 62.5%;
+    .container-home-backgound{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        .container-home-overlay{
+            position: absolute;
+            top : 0;
+            width: 100%;
+            height: 115%;
+            background-color: rgba(0,0,0,.3);
+            margin-top: 50px;
+        }
+        .container-home-backgound-video{
+            width: 100%;
+            height: 115%;
+            object-fit: cover;
+        }
+        .container-home-title{
+            font-size: 3.5rem;
+            position: absolute;
+            margin-bottom: 150px;
+        }
+        .container-home-content{
+            position: absolute;
         }
     }
+    
 }

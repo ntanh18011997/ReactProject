@@ -8,7 +8,7 @@ import About from './About/about';
 import Home from './Home/home';
 import ListUser from './Users/ListUser';
 import Detail from './Users/DetailUser';
-
+import Test from './Test/Test';
 // import router 
 import {
   BrowserRouter ,
@@ -48,6 +48,9 @@ function App() {
           </Route>
           <Route path="/user/:id">
             <Detail/>
+          </Route>
+          <Route path="/test">
+            <Test/>
           </Route>
         </Switch>
       </header> 
