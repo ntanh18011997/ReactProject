@@ -1,67 +1,155 @@
-.container-list-todo{
-    width: 700px;
-    background-color: #151a30;
+.container-todo{
+    width: 100%;
     margin: 0 auto;
-    padding: 50px 0;
-    border-radius: 10px;
-    .add-todo{
-        margin-bottom: 20px;
-        .add-todo__input{
-            border: 2px solid #632ed4;
-            background-color: transparent;
-            padding: 5px ;
-            color: white;
-            outline: none;
-            width: 40vh;
-            margin-bottom: 10px;
-        }
-        .add-todo__btn{
-            border: 2px solid #9133ff;
-            background-image: linear-gradient(-180deg,#9d2af9, #6912ff,);
-            color: white;
-            padding: 5px 15px ;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-    }
-    .list-content{
-        color: black;
-        width: 500px;
-        margin: 0 auto;
-        .list-content__child{
-            margin: 5px 0;
-            border: 1px solid grey;
-            padding: 10px 10px;
-            border-radius: 2px;
-            background-color: #f4cb95   ;
-            display: flex;
-            justify-content: space-between;
-            &:hover{
-                border: 2px solid;
-                border-image-slice: 1;
-                border-width: 3px;
-                // background-image: linear-gradient(to right bottom, red, yellow);
-                border-image-source: linear-gradient(to left, #743ad5, #d53a9d);   
-            }
-            .list-content__child-text{
-
-            }
-            .list-content__child-btn{
-                display: inline-block;
-                .list-content__child-btn-hover{
+    display: flex;
+    justify-content: center;
+    .container-list-todo{
+        color: white;
+        width: 700px;
+        background-color: #151a30;
+        border-radius: 10px;
+        padding: 50px 0;
+        margin-top: 70px;
+        .list-input{
+            .add-todo{
+                margin-bottom: 20px;
+                .add-todo__input{
+                    border: 2px solid #632ed4;
+                    background-color: transparent;
+                    padding: 5px ;
+                    color: white;
+                    outline: none;
+                    width: 40vh;
+                    margin-bottom: 10px;
+                }
+                .add-todo__btn{
+                    border: 2px solid #9133ff;
+                    background-image: linear-gradient(-180deg,#9d2af9, #6912ff,);
+                    color: white;
+                    padding: 5px 15px ;
                     &:hover{
                         cursor: pointer;
                     }
                 }
-                .list-content__child-btn-edit{
-                    color: #006400;
+            }
+        }
+        .list-content{
+            color: black;
+            width: 500px;
+            margin: 0 auto;
+            .list-input{
+                color:white ;
+            }
+            .list-content__child{
+                margin: 5px 0;
+                border: 1px solid grey;
+                padding: 10px 10px;
+                border-radius: 2px;
+                background-color: #f4cb95   ;
+                display: flex;
+                justify-content: space-between;
+                &:hover{
+                    border: 2px solid;
+                    border-image-slice: 1;
+                    border-width: 3px;
+                    // background-image: linear-gradient(to right bottom, red, yellow);
+                    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);   
+                }
+                .list-content__child-text{
+        
+                }
+                .list-content__child-btn{
+                    display: inline-block;
+                    .list-content__child-btn-hover{
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .list-content__child-btn-edit{
+                        color: #006400;
+                        }
+                    }
+                    .list-content__child-btn-delete{
+                        margin-left: 10px;
+                        color: #DC143C
+                    }
+            }
+        }
+        margin-right: 10px;
+    }
+    .container-list-todo-hook{
+        width: 700px;
+        background-color: #151a30;
+        padding: 50px 0;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: 70px;
+        .list-input-hook{
+            .add-todo-hook{
+                margin-bottom: 20px;
+                .add-todo__input-hook{
+                    border: 2px solid #632ed4;
+                    background-color: transparent;
+                    padding: 5px ;
+                    color: white;
+                    outline: none;
+                    width: 40vh;
+                    margin-bottom: 10px;
+                }
+                .add-todo__btn-hook{
+                    border: 2px solid #9133ff;
+                    background-image: linear-gradient(-180deg,#9d2af9, #6912ff,);
+                    color: white;
+                    padding: 5px 15px ;
+                    &:hover{
+                        cursor: pointer;
                     }
                 }
-                .list-content__child-btn-delete{
-                    margin-left: 10px;
-                    color: #DC143C
+            }
+            .list-content__child-hook{
+                color: black;
+                width: 500px;
+                margin: 0 auto;
+                .list-content__child-item-hook{
+                    padding: 10px 10px;
+                    margin: 5px auto;
+                    display: flex;
+                    border: 1px solid grey;
+                    background-color: #f4cb95;
+                    justify-content: space-between;
+                    &:hover{
+                        border: 2px solid;
+                        border-image-slice: 1;
+                        border-width: 2px;
+                        // background-image: linear-gradient(to right bottom, red, yellow);
+                        border-image-source: linear-gradient(to left, #743ad5, #d53a9d);   
+                    }
+                    .list-content__child-text-item-hook{
+                        width: 500px;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .list-content__child-btn-hook{
+                        display: flex;
+                        .list-content__child-btn--edit{
+                            color: #006400;
+                            margin-right: 10px;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        .list-content__child-btn--delete{
+                            color: #DC143C;
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
                 }
+                
+                
             }
         }
     }
+}

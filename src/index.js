@@ -13,7 +13,7 @@ import rootReducer from './store/reducers/rootReducer';
 const reduxStore = createStore(rootReducer)
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={reduxStore}>
+    <Provider store={reduxStore}> 
       <App />
     </Provider>
   </React.StrictMode>,

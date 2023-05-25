@@ -18,7 +18,7 @@
             id : Math.floor(Math.random()*10000),
             name : this.state.name
         }
-        this.props.AddTodo(todo)
+        this.props.AddTodos(todo)
         this.setState({
             name: ''
         })
@@ -26,9 +26,9 @@
     render() {
         let {name} = this.state
         return(
-            <div>
+            <div className="list-input">
                 <p>
-                    What's the Plan for Today ?
+                    What's the Plan for Today ? With Class Component
                 </p>
                 <div className='add-todo'>
                     <input 

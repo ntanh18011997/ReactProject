@@ -1,0 +1,29 @@
+.container{
+    .container-table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      .container-table td, .container-table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+    .container-table td:hover{
+        cursor: pointer;
+      }
+      
+      .container-table tr:nth-child(even){background-color: #333;}
+      
+      .container-table tr:hover {
+        background-color:rgb(46, 67, 75) ;
+    }
+      
+      .container-table th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+      }
+}
