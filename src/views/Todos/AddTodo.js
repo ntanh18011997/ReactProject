@@ -28,7 +28,10 @@
         return(
             <div className="list-input">
                 <p>
-                    What's the Plan for Today ? With Class Component
+                    What's the Plan for Today ? 
+                </p>
+                <p>
+                    With Class Component
                 </p>
                 <div className='add-todo'>
                     <input 

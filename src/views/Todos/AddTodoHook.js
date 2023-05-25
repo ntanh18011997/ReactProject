@@ -20,7 +20,10 @@ function AddTodoHook () {
     return(
         <div className="list-input-hook">
             <p>
-                What's the Plan for Today ? With ReactHook
+                What's the Plan for Today ?
+            </p>
+            <p>
+                With ReactHook
             </p>
             <div className='add-todo-hook'>
                 <input 
