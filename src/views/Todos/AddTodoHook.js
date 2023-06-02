@@ -15,8 +15,16 @@ function AddTodoHook () {
         setTodos([
             ...listTodos, todo
         ])
-        setName("")
+        setName(" ")
     }
+    
+    const handleDeleteTodo = (item) => {
+        let newListTodo = listTodos.filter(_ => _.id !== item)
+        setTodos(newListTodo)
+    }
+    const editList = (item) => {
+        console.log(item)
+    }   
     return(
         <div className="list-input-hook">
             <p>
@@ -40,18 +48,20 @@ function AddTodoHook () {
             </div>
             <div className="list-content__child-hook">
                 {listTodos && listTodos.length > 0 && listTodos.map((item, index) => {
+                    let isEmptyObj = Object.keys(listTodos).length === 0
                 return (
+                    
                     <div className="list-content__child-item-hook">
                         <div className="list-content__child-text-item-hook">
                             {index + 1}.{" "}{item.name}
-                        </div>
+                        </div> 
                         <div className="list-content__child-btn-hook">
-                            <i className="fa-regular fa-pen-to-square list-content__child-btn--edit list-content__child-btn-hover"></i>
+                            <i className="fa-regular fa-pen-to-square list-content__child-btn--edit list-content__child-btn-hover" onClick={()=> editList(item)}></i>
                             <i 
-                                    type="button"
-                                    className="fa-regular fa-circle-xmark list-content__child-btn--delete list-content__child-btn-delete list-content__child-btn-hover"
-                                    onClick={()=> this.handleDeleteTodo(item)}>
-                                </i>
+                                type="button"
+                                className="fa-regular fa-circle-xmark list-content__child-btn--delete list-content__child-btn-delete list-content__child-btn-hover"
+                                onClick={()=> handleDeleteTodo(item.id)}>
+                            </i>
                         </div>
                     </div>
                 )

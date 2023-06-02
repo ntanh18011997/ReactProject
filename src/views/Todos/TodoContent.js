@@ -62,7 +62,6 @@ class TodoContent extends React.Component{
         let {listTodo} = this.state;
         let {editTodo} = this.state;
         let isEmptyObj = Object.keys(editTodo).length === 0; // If editTodo == empty => true ;  // If editTodo !== empty => false;
-        console.log("check editTodo", isEmptyObj)
         return(
             <div>
                 <AddTodo 

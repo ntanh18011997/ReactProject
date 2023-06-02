@@ -28,6 +28,7 @@ class ListUser extends React.Component{
                 <div className="title">
                     Get and render data from API <a>https://reqres.in/api/users?page=2</a> 
                 </div>
+                <p> You can click to know detail</p>
                 <div className="list-user-content">
                     {ListUser && ListUser.length > 0 &&
                         ListUser.map((item,index) => {

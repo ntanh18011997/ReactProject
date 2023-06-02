@@ -18,14 +18,14 @@ class ListTodo extends React.Component{
                     </div>
                 </div>
                 <div className='container-list-todo-hook'>
-                        <div className='list-input-hook'>
-                            <AddTodoHook
-                            />
-                        </div>
-                    <div className='container-todo-hook-content'>
-
+                    <div className='list-input-hook'>
+                        <AddTodoHook
+                        />
                     </div>
+                <div className='container-todo-hook-content'>
+
                 </div>
+            </div> 
             </div>
         )
     }

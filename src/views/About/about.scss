@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .container-about{
+        margin-top: 30px;
+        width: 80%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: #151a30;
+        background-image: url(../../assets/images/Tuananh-background-about.jpg);
+        background-size :50% ;
+        color:RGB(155, 35, 53);
+        font-weight: 400;
+        
+        border-radius: 10px;
+        .about-sidebar{
+            width: 50%;
+            height: 550px;
+            background-color: #151a30;
+            border-radius: 10px 0 0 10px;
+            .about-sidebar__avatar{
+                margin-top: 20px;
+                .about-sidebar__avatar-img{
+                    width: 250px;
+                    border-radius: 50%;
+                }
+            }
+            .about-sidebar__infor{
+                padding-top: 10px;
+                margin-left: 100px;
+                text-align: left;
+                padding-left: 60px;
+            }
+        }
+        .about-content{
+            height: 500px;
+            width: 50%;
+            color: black;
+            text-align: left;
+            justify-content: center;
+            .about-content-text{
+                margin-top: 20px;
+                margin-left: 130px;
+                font-family: Segoe Print;
+                background-color: white;
+                border-radius: 50px 20px;
+                padding-left: 10px;
+            }
+        }
+    }
+}

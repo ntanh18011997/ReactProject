@@ -31,7 +31,6 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          
         </a>
         <Switch>
           <Route path="/" exact >
@@ -54,7 +53,6 @@ function App() {
           </Route>
         </Switch>
       </header> 
-
       <ToastContainer
         position="top-right"
         autoClose={5000}
