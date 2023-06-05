@@ -7,6 +7,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     .container-about{
         margin-top: 30px;
         width: 80%;
@@ -27,15 +28,15 @@
             background-color: #151a30;
             border-radius: 10px 0 0 10px;
             .about-sidebar__avatar{
-                margin-top: 20px;
+                margin-top: 100px;
                 .about-sidebar__avatar-img{
                     width: 250px;
                     border-radius: 50%;
                 }
             }
             .about-sidebar__infor{
-                padding-top: 10px;
-                margin-left: 100px;
+                padding-top: 30px;
+                margin-left: 140px;
                 text-align: left;
                 padding-left: 60px;
             }

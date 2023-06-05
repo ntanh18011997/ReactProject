@@ -44,8 +44,8 @@ class Detail extends React.Component{
                         </tr>
                     </tbody>
                 </table>
-                <div>
-                    <button onClick={() => this.handleBackButton()}> Back </button>
+                <div className="user-btn">
+                    <button onClick={() => this.handleBackButton()} className="user-btn-back"> Back </button>
                 </div>
             </div>
         )
